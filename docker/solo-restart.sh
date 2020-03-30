@@ -15,7 +15,9 @@ docker run --detach --name solo --network=host -m 500m \
     --env JDBC_PASSWORD="94adg2011" \
     --env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
     --env JDBC_URL="jdbc:mysql://127.0.0.1:3306/solo?useUnicode=yes&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC" \
-    --volume /dockerData/solo/skins/solo-nexmoe:/opt/solo/skins/solo-nexmoe \
+    --volume /dockerData/solo/skins/Casper:/opt/solo/skins/Casper-Mod \
+    --volume /dockerData/solo/skins/Pinghsu:/opt/solo/skins/Pinghsu-Mod \
+    --volume /dockerData/solo/skins/solo-sakura:/opt/solo/skins/solo-sakura \
     b3log/solo --listen_port=8080 --server_scheme=https --server_host=www.zeekling.cn \
 	--lute_http=http://127.0.0.1:8249
 
