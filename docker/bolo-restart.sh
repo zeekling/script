@@ -8,7 +8,7 @@
 #
 docker stop bolo
 docker rm bolo
-docker run --detach --name bolo --network=host -m 500m \
+docker run --detach --name bolo --network=host -m 1500m \
     --env RUNTIME_DB="MYSQL" \
     --env JDBC_USERNAME="root" \
     --env JDBC_PASSWORD="94adg2011" \
