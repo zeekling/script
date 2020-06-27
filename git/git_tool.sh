@@ -13,12 +13,18 @@ fi
 shift 1
 if test -z $*;then
 	git add -A
-	git commit &&
-		git pull origin ${BRANCH} && git push origin ${BRANCH}
+	echo "add change file"
+	git commit
+	echo "add commit message"
+	git pull origin ${BRANCH} && git push origin ${BRANCH}
+	echo "commit finish"
 	exit 0
 else
 	git add -A
-	git commit -m "$*" &&
-		git pull origin ${BRANCH} && git push origin ${BRANCH}
+	echo "add change file"
+	git commit -m "$*"
+	echo "add commit message"
+	git pull origin ${BRANCH} && git push origin ${BRANCH}
+	echo "commit finish"
 	exit 0
 fi
