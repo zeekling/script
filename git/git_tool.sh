@@ -5,7 +5,7 @@
 # 2. 在当前git项目路径下执行:mygit branch(分支名称) msg(提交信息)
 # author: zeekling
 
-BRANCH=master
+BRANCH="master"
 if ! test -z $1;then
 	BRANCH=$1
 fi
