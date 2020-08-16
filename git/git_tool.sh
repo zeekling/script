@@ -13,18 +13,18 @@ fi
 shift 1
 if test -z $*;then
 	git add -A
-	echo -e "\033[32m add change file\033[37m"
+	echo -e "\033[32m add change file\033[0m"
 	git commit
-	echo -e "\033[32madd commit message\033[37m"
+	echo -e "\033[32madd commit message\033[0m"
 	git pull origin ${BRANCH} && git push origin ${BRANCH}
-	echo -e "\033[32mcommit finish\033[37m"
+	echo -e "\033[32mcommit finish\033[0m"
 	exit 0
 else
 	git add -A
-	echo -e "\033[32madd change file\033[37m"
+	echo -e "\033[32madd change file\033[0m"
 	git commit -m "$*"
-	echo -e "\033[32madd commit message\033[37m"
+	echo -e "\033[32madd commit message\033[0m"
 	git pull origin ${BRANCH} && git push origin ${BRANCH}
-	echo -e "\033[32mcommit finish\033[37m"
+	echo -e "\033[32mcommit finish\033[0m"
 	exit 0
 fi
