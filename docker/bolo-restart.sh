@@ -10,7 +10,7 @@ docker stop bolo
 docker rm bolo
 docker run --detach --name bolo --network=host  \
     --env RUNTIME_DB="MYSQL" \
-	--env JAVA_OPTS="-Xms300m -Xmx300m -Xmn230m -Xloggc:/var/log/gc.log" \
+	--env JAVA_OPTS="-Xms265m -Xmx265m -Xmn170m -Xloggc:/var/log/gc.log" \
     --env JDBC_USERNAME="root" \
     --env JDBC_PASSWORD="123456" \
     --env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
