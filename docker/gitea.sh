@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gitea_version="1.14.3"
+gitea_version="1.14.5"
 docker pull gitea/gitea:${gitea_version}
 docker stop gitea
 docker rm gitea
